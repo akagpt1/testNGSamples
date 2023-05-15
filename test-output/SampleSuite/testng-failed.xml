@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SampleSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="Browser" value="Chrome"/>
+  <test thread-count="5" name="ModuleOneTest(failed)">
+    <classes>
+      <class name="testScriptsNG.LoginTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="validLogin" invocation-numbers="2"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testScriptsNG.LoginTest -->
+    </classes>
+  </test> <!-- ModuleOneTest(failed) -->
+</suite> <!-- Failed suite [SampleSuite] -->
